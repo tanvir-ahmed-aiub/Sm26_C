@@ -19,6 +19,18 @@ namespace FormProcessing.Controllers
             else ViewBag.Msg = "Login Failed";
             return View();
         }
+        [HttpGet]
+        public IActionResult Registration() {
+            return View(new Registration());
+        }
+        [HttpPost]
+        public IActionResult Registration(Registration obj) {
+            if (ModelState.IsValid) //validation
+            {
+                return RedirectToAction("Login", "Home"); //action,controller
+            }
+            return View(obj);
+        }
 
         public IActionResult Index()
         {
