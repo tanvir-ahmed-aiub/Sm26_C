@@ -1,0 +1,80 @@
+﻿using System;
+using System.Collections.Generic;
+using IntroEFDbFirst.EF.Tables;
+using Microsoft.EntityFrameworkCore;
+
+namespace IntroEFDbFirst.EF;
+
+public partial class Sm26CContext : DbContext
+{
+    public Sm26CContext()
+    {
+    }
+
+    public Sm26CContext(DbContextOptions<Sm26CContext> options)
+        : base(options)
+    {
+    }
+
+    public virtual DbSet<Course> Courses { get; set; }
+
+    public virtual DbSet<CourseStudent> CourseStudents { get; set; }
+
+    public virtual DbSet<Department> Departments { get; set; }
+
+    public virtual DbSet<Student> Students { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        => optionsBuilder.UseSqlServer("Name=DbConn");
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Course>(entity =>
+        {
+            entity.Property(e => e.Name)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+
+            entity.HasOne(d => d.Dept).WithMany(p => p.Courses)
+                .HasForeignKey(d => d.DeptId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Courses_Departments");
+        });
+
+        modelBuilder.Entity<CourseStudent>(entity =>
+        {
+            entity.HasOne(d => d.Course).WithMany(p => p.CourseStudents)
+                .HasForeignKey(d => d.CourseId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_CourseStudents_Courses");
+
+            entity.HasOne(d => d.Student).WithMany(p => p.CourseStudents)
+                .HasForeignKey(d => d.StudentId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_CourseStudents_Students");
+        });
+
+        modelBuilder.Entity<Department>(entity =>
+        {
+            entity.Property(e => e.Name)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<Student>(entity =>
+        {
+            entity.Property(e => e.Name)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+
+            entity.HasOne(d => d.Dept).WithMany(p => p.Students)
+                .HasForeignKey(d => d.DeptId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Students_Departments");
+        });
+
+        OnModelCreatingPartial(modelBuilder);
+    }
+
+    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+}
