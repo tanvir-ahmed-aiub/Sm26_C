@@ -1,0 +1,6 @@
+@APiWithMapping_HostAddress = http://localhost:5044
+
+GET {{APiWithMapping_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

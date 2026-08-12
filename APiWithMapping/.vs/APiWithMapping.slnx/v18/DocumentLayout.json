@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|c:\\users\\tanvir ahmed\\desktop\\.net\\c\\apiwithmapping\\apiwithmapping\\ef\\tables\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|solutionrelative:apiwithmapping\\ef\\tables\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|c:\\users\\tanvir ahmed\\desktop\\.net\\c\\apiwithmapping\\apiwithmapping\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|solutionrelative:apiwithmapping\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|c:\\users\\tanvir ahmed\\desktop\\.net\\c\\apiwithmapping\\apiwithmapping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|solutionrelative:apiwithmapping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|c:\\users\\tanvir ahmed\\desktop\\.net\\c\\apiwithmapping\\apiwithmapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|solutionrelative:apiwithmapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|c:\\users\\tanvir ahmed\\desktop\\.net\\c\\apiwithmapping\\apiwithmapping\\models\\departmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|solutionrelative:apiwithmapping\\models\\departmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|c:\\users\\tanvir ahmed\\desktop\\.net\\c\\apiwithmapping\\apiwithmapping\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2E852AB1-DCB0-4584-A52B-94EDA75E3AB2}|APiWithMapping\\APiWithMapping.csproj|solutionrelative:apiwithmapping\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "APiWithMapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\MappingProfile.cs",
+              "RelativeToolTip": "APiWithMapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T06:11:01.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\EF\\Tables\\Department.cs",
+              "RelativeDocumentMoniker": "APiWithMapping\\EF\\Tables\\Department.cs",
+              "ToolTip": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\EF\\Tables\\Department.cs",
+              "RelativeToolTip": "APiWithMapping\\EF\\Tables\\Department.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T06:10:09.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DepartmentModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\Models\\DepartmentModel.cs",
+              "RelativeDocumentMoniker": "APiWithMapping\\Models\\DepartmentModel.cs",
+              "ToolTip": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\Models\\DepartmentModel.cs",
+              "RelativeToolTip": "APiWithMapping\\Models\\DepartmentModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T06:10:05.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "APiWithMapping\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "APiWithMapping\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T06:08:17.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\Program.cs",
+              "RelativeDocumentMoniker": "APiWithMapping\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\Program.cs",
+              "RelativeToolTip": "APiWithMapping\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T06:07:04.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\appsettings.json",
+              "RelativeDocumentMoniker": "APiWithMapping\\appsettings.json",
+              "ToolTip": "C:\\Users\\Tanvir Ahmed\\Desktop\\.NET\\C\\APiWithMapping\\APiWithMapping\\appsettings.json",
+              "RelativeToolTip": "APiWithMapping\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-10T06:01:47.494Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
