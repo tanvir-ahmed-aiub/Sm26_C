@@ -1,9 +1,11 @@
 ﻿using BLL.Services;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppLayerAPI.Controllers
 {
+    [EnableCors("OpenAPI")]
     [Route("api/[controller]")]
     [ApiController]
     public class DepartmentController : ControllerBase
@@ -12,7 +14,7 @@ namespace AppLayerAPI.Controllers
         public DepartmentController(DepartmentService service) { 
             this.service = service;
         }
-
+        
         [HttpGet("all")]
         public IActionResult All() {
             var data = service.All() ;// Call BLL

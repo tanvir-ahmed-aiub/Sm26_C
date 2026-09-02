@@ -19,6 +19,17 @@ builder.Services.AddDbContext<Sm26CContext>(opt => {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DbConn"));
 });
 
+builder.Services.AddCors(policy => {
+    policy.AddPolicy("OpenAPI", rule => {
+        rule.WithOrigins("null").AllowAnyMethod().AllowAnyHeader();
+    });
+
+    policy.AddPolicy("AIUBAPI", rule => {
+        rule.WithOrigins("www.aiub.edu").AllowAnyMethod().AllowAnyHeader();
+    });
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -32,5 +43,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.UseCors();
 app.Run();

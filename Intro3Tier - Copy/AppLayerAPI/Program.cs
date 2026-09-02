@@ -1,0 +1,48 @@
+using BLL;
+using BLL.Services;
+using DAL;
+using DAL.EF;
+using DAL.Repository;
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+builder.Services.AddControllers();
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddOpenApi();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddScoped<DataAccessFactory>();
+builder.Services.AddScoped<DepartmentService>();
+builder.Services.AddDbContext<Sm26CContext>(opt => {
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DbConn"));
+});
+
+builder.Services.AddCors(policy => {
+    policy.AddPolicy("OpenAPI", rule => {
+        rule.WithOrigins("null").AllowAnyMethod().AllowAnyHeader();
+    });
+
+    policy.AddPolicy("AIUBAPI", rule => {
+        rule.WithOrigins("www.aiub.edu").AllowAnyMethod().AllowAnyHeader();
+    });
+});
+
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+}
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+app.UseCors();
+app.Run();
